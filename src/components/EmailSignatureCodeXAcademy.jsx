@@ -1,6 +1,6 @@
 import React from "react";
 
-const EmailSignatureAcklen = ({ fullName, role, phone }) => {
+const EmailSignatureCodeXAcademy = ({ fullName, role, phone }) => {
   // const style = {
   //   backgroundColor: "#ffffff",
   // };
@@ -142,4 +142,4 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
   );
 };
 
-export default EmailSignatureAcklen;
+export default EmailSignatureCodeXAcademy;

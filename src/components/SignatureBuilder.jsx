@@ -43,10 +43,62 @@ function SignatureBuilder() {
         <div className="row">
           <div className="col">
             <h1 className="h1">Enter your info.</h1>
+            <div className="container">
+              <div className="row">
+                <form>
+                  <div className="mb-3">
+                    <label htmlFor="name" className="form-label">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="name"
+                      name="name"
+                      value={name}
+                      onChange={(event) => setName(event.target.value)}
+                      placeholder="John Doer"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="role" className="form-label">
+                      Role
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="role"
+                      name="role"
+                      value={role}
+                      onChange={(event) => setRole(event.target.value)}
+                      placeholder="Chief Technology Officer"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="phone" className="form-label">
+                      Number
+                    </label>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      id="phone"
+                      name="phone"
+                      value={phone}
+                      onChange={(event) => setPhone(event.target.value)}
+                      placeholder="(615) 988-4700"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
           <div className="col">
             <h1 className="h1">Your email signature.</h1>
-            <EmailSignatureCodeXAcademy />
+            <EmailSignatureCodeXAcademy
+              fullName={name}
+              role={role}
+              phone={phone}
+            />
           </div>
         </div>
       </div>

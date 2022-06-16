@@ -1,9 +1,10 @@
 import React from "react";
 
-const EmailSignatureAcklen = ({ fullName, role, phone }) => {
-  // const style = {
-  //   backgroundColor: "#ffffff",
-  // };
+const EmailSignatureCodeXAcademy = ({ fullName, role, phone }) => {
+  const CODEX_BACKGROUND_COLOR = "#01ADFE";
+  // const CODEX_BACKGROUND_COLOR_2 = "#363045";
+  // const CODEX_BACKGROUND_COLOR_3 = "#F7BC07";
+  // const CODEX_BACKGROUND_COLOR_4 = "#B6C6C8";
 
   const tableStyle = {
     display: "table",
@@ -12,6 +13,10 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
     textIndent: "initial",
     borderSpacing: "2px",
     borderColor: "grey",
+  };
+
+  const anchorIconStyle = {
+    marginRight: "10px",
   };
 
   return (
@@ -26,9 +31,9 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
         <tr>
           <td style={{ padding: "15px" }}>
             <img
-              width="70"
-              src="http://acklenavenue.com/img/pixelheart.png"
-              alt="acklen avenue pixel heart"
+              width="120"
+              src="https://storage.googleapis.com/msgsndr/tQf1jMr6eaubhf5HqxHn/media/61f55bf5685cc3254f37357d.png"
+              alt="codex academy graduate hat"
             />
           </td>
           <td
@@ -36,7 +41,7 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
             align="left"
             style={{
               paddingLeft: "15px",
-              borderLeft: "2px solid #72C02C",
+              borderLeft: "2px solid " + CODEX_BACKGROUND_COLOR,
               textAlign: "left",
             }}
           >
@@ -68,7 +73,7 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
                       paddingTop: "3px",
                     }}
                   >
-                    {role}, Acklen Avenue
+                    {role}, CodeX Academy
                   </td>
                 </tr>
                 <tr>
@@ -89,9 +94,11 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
                     >
                       {phone}
                     </a>{" "}
-                    <span style={{ color: "#72C02C" }}>|</span>{" "}
+                    <span style={{ color: CODEX_BACKGROUND_COLOR }}>|</span>{" "}
                     <a
-                      href="http://acklenavenue.com/"
+                      href="http://codex.academy/"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{
                         textDecoration: "none",
                         color: "#4F4F4F",
@@ -99,7 +106,7 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
                       }}
                     >
                       {" "}
-                      acklenavenue.com
+                      codex.academy
                     </a>
                   </td>
                 </tr>
@@ -112,23 +119,86 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
                       color: "#999999",
                     }}
                   >
-                    <em>Stress-Free Wizardry</em>
+                    <em>
+                      Learn to Code. <b>Save the World.</b>
+                    </em>
                   </td>
                 </tr>
                 <tr>
-                  <td style={{ textAlign: "left", paddingTop: "6px" }}>
-                    <a href="https://www.linkedin.com/company/acklen-avenue">
+                  <td
+                    style={{
+                      textAlign: "left",
+                      paddingTop: "6px",
+                    }}
+                  >
+                    <a
+                      href="https://www.facebook.com/codexacademyonline"
+                      style={anchorIconStyle}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
-                        width="18"
-                        src="http://acklenavenue.com/img/linked-in-icon.png"
-                        alt="linkedin"
+                        alt="facebook-f"
+                        height="20"
+                        src={
+                          "https://storage.googleapis.com/msgsndr/tQf1jMr6eaubhf5HqxHn/media/62ab9c995739f771b84e89d4.png"
+                        }
                       />
-                    </a>{" "}
-                    <a href="https://twitter.com/acklenavenue">
+                    </a>
+                    <a
+                      href="https://twitter.com/Academycodex"
+                      style={anchorIconStyle}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
-                        width="18"
                         alt="twitter"
-                        src="http://acklenavenue.com/img/twitter-icon.png"
+                        height="20"
+                        src={
+                          "https://storage.googleapis.com/msgsndr/tQf1jMr6eaubhf5HqxHn/media/62ab9c99b282222e1de9304f.png"
+                        }
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/codexacademyonline/"
+                      style={anchorIconStyle}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        alt="instagram"
+                        height="20"
+                        src={
+                          "https://storage.googleapis.com/msgsndr/tQf1jMr6eaubhf5HqxHn/media/62ab9c995739f7b1284e89d5.png"
+                        }
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/codexdotacademy/"
+                      style={anchorIconStyle}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        alt="linked-in"
+                        height="20"
+                        src={
+                          "https://storage.googleapis.com/msgsndr/tQf1jMr6eaubhf5HqxHn/media/62ab9c99b28222e854e9304e.png"
+                        }
+                      />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UCUKP1GrIaI-dcuV1IlK7x8Q"
+                      style={anchorIconStyle}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        alt="youtube"
+                        width="20"
+                        src={
+                          "https://storage.googleapis.com/msgsndr/tQf1jMr6eaubhf5HqxHn/media/62ab9c9a5739f75d1b4e89d6.png"
+                        }
                       />
                     </a>
                   </td>
@@ -142,4 +212,4 @@ const EmailSignatureAcklen = ({ fullName, role, phone }) => {
   );
 };
 
-export default EmailSignatureAcklen;
+export default EmailSignatureCodeXAcademy;

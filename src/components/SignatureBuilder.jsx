@@ -3,9 +3,9 @@ import EmailSignatureCodeXAcademy from "./EmailSignatureCodeXAcademy";
 import Navbar from "./Navbar";
 
 function SignatureBuilder() {
-  const [name, setName] = useState("Byron Sommardahl"); // "Byron Sommardahl"
-  const [role, setRole] = useState("Chief Technology Officer"); // "Chief Technology Officer"
-  const [phone, setPhone] = useState("(615) 988-4700"); // "(615) 988-4700"
+  const [name, setName] = useState("");
+  const [role, setRole] = useState("");
+  const [phone, setPhone] = useState("");
 
   function selectElementContents(element) {
     var body = document.body,
@@ -90,7 +90,7 @@ function SignatureBuilder() {
                         name="phone"
                         value={phone}
                         onChange={(event) => setPhone(event.target.value)}
-                        placeholder="(615) 988-4700"
+                        placeholder="(615) 000-0000"
                       />
                     </div>
                   </form>
@@ -121,7 +121,7 @@ function SignatureBuilder() {
                   </div>
                 </div>
                 <div className="row mb-3">
-                  <div className="col d-flex flex-column align-items-center">
+                  <div className="col d-flex justify-content-center">
                     <EmailSignatureCodeXAcademy
                       fullName={name}
                       role={role}

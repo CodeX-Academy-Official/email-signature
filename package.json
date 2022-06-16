@@ -2,6 +2,7 @@
   "name": "email-signature",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codex-academy-official.github.io/email-signature",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
